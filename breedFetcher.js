@@ -11,7 +11,7 @@ const fetchBreedDescription = (breedName, callback) => {
     try {
       callback(null, data[0].description);
     } catch (error) {
-      error = "Breed not found or no description available.";
+      error = "Breed not found";
       callback(error, null);
     }
   });
